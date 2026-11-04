@@ -21,7 +21,7 @@ Antes dos dados, foram 7 anos em logística industrial (SAP, OTIF, SLA). Por iss
 | **~24h → 1h** | Latência dos indicadores executivos, com 90+ DAGs em Airflow sobre Docker |
 | **3–4h/dia → 20 min** | Consolidação manual substituída por pipeline automatizado (60–80 h/mês economizadas) |
 | **40 → 2 min (−95%)** | Performance tuning de queries críticas em Oracle via planos de execução |
-| **60 relatórios versionados** | CI/CD de Power BI com GitHub Actions, deploy seletivo e aprovação em produção |
+| **60 relatórios versionados** | CI/CD de Power BI e Fabric com GitHub Actions, deploy seletivo e aprovação em produção |
 
 ## Stack
 
@@ -56,6 +56,7 @@ Antes dos dados, foram 7 anos em logística industrial (SAP, OTIF, SLA). Por iss
 | Projeto | O que mostra |
 |---|---|
 | [**medallion-airflow-dbt**](https://github.com/jonatasvelloso/medallion-airflow-dbt) | Pipeline Bronze → Silver → Gold com Airflow, dbt e PostgreSQL em Docker, usando dados fictícios de 3 empresas |
+| [**fabric-deploy-pipeline**](https://github.com/jonatasvelloso/fabric-deploy-pipeline) | CI/CD para qualquer item do Microsoft Fabric com pyfabricops e GitHub Actions: validação no PR, parâmetros por ambiente e aprovação para produção |
 
 > Os projetos aqui usam dados fictícios. O código de produção dos meus empregadores permanece privado.
 
